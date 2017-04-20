@@ -8,8 +8,8 @@ segmentcount=input('segment sayýsýný girin');
 [xsize,ysize]=size(heightmap);
 populationcount=input('populasyon limitinigirin');
 population= ObjectArray(populationcount);
-[mx,ny]=size(heightmap);
-for n=1:populationcount;
-population(n)=individual(startcoordinates,endcoordinates,mx,ny,segmentcount);
+[m,n]=size(heightmap);
+for n=population
+n=individual(startcoordinates,endcoordinates,m,n,segmentcount);
 end
 

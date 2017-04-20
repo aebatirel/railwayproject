@@ -17,8 +17,6 @@ classdef individual
             if obj1.segmentcount==obj2.segmentcount
                 [route1,route2]=crossover_route (obj1.routecoodinates,obj2.routecoodinates,obj1);
             end
-           
-            
         end
         function [output]=mutateroute(obj)
             output=mutate_route(obj.routecoodinates,obj.segmentcount);
