@@ -10,6 +10,6 @@ populationcount=input('populasyon limitinigirin');
 population= ObjectArray(populationcount);
 [mx,ny]=size(heightmap);
 for n=1:populationcount;
-population(n)=individual(startcoordinates,endcoordinates,mx,ny,segmentcount);
+    population(n)=individual(startcoordinates,endcoordinates,mx,ny,segmentcount);
 end
 
